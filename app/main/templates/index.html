@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+	<p>Logged in as @{{ current_user.screen_name }}</p>
+	<table>
+		<thead>
+			<tr>
+				<th>Followers</th>
+				<th>Followings</th>
+				<th>Mutuals</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>{{ current_user.followers_count }}</td>
+				<td>{{ current_user.followings_count }}</td>
+				<td>{{ current_user.mutuals_count }}</td>
+			</tr>
+		</tbody>
+	</table>
+{% endblock %}

@@ -1,0 +1,6 @@
+flask
+flask-apscheduler
+flask-login
+flask-migrate
+flask-sqlalchemy
+tweepy
